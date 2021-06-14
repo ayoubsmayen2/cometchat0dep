@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chatting  &hearts; </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script> 
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
+
+    <!-- cometchat -->
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/@cometchat-pro/chat@2.3.1/CometChat.js"
+    ></script>
+
+    <script
+      defer
+      src="https://widget-js.cometchat.io/v2/cometchatwidget.js"
+    ></script>
+
+    <script> 
+        $(document).ready(function(){
+            $('#checkbox').click(function(){
+
+              //  alert("dark mode");
+                var element = document.body;         
+                element.classList.toggle("dark"); 
+            });
+        });        
+    </script> 
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main_container" style="display: none">
+      <h1>welcome to owr  chat  4SE4  
+    
+
+
+      </h1>
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+    </label>
+
+      <button onclick="logout();">logout
+        <i class="fa fa-sign-out" aria-hidden="true"></i>
+    </button>
+    </div>
+
+    <div id="cometchat"></div>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- local scripts -->
+    <script src="init.js"></script>
+    <script src="index.js"></script>
+   
+  </body>
+</html>
